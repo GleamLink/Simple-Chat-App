@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <h1><%= isLoggedIn %></h1>
+    <button id="btnOne">Login</button>
+    <script>
+      var btn = document.getElementById("btnOne")
+      btn.addEventListener('click', (e) => {
+        isLoggedIn = true
+      })
+    </script>
+  </body>
+</html>
